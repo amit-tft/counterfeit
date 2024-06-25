@@ -18,7 +18,7 @@ CLASS_NAMES = [
     'Texaco', 'Unicef', 'Vodafone', 'Yahoo'
 ]
 LABEL_MAP = {i + 1: name for i, name in enumerate(CLASS_NAMES)}
-PB_PATH = '/model/mymodel.pb'
+PB_PATH = 'model/mymodel.pb'
 
 # Load the model
 graph_def = load_frozen_model(PB_PATH)
