@@ -32,7 +32,7 @@ def preprocess_image(image, target_size):
 def draw_label(image, left, top, label, color, text_color, bg_color):
     """Draw a label with a background on the image."""
     draw = ImageDraw.Draw(image)
-    font = ImageFont.truetype("arial.ttf", 20)  # Increase font size
+    font = ImageFont.truetype("DejaVuSans.ttf", 20)  # Increase font size
     text_bbox = draw.textbbox((left, top), label, font=font)
     draw.rectangle(text_bbox, fill=bg_color)
     draw.text((left, top), label, fill=text_color, font=font)
@@ -40,7 +40,7 @@ def draw_label(image, left, top, label, color, text_color, bg_color):
 def draw_legend(image, text, position, box_color, text_color):
     """Draw a beautified legend on the image."""
     draw = ImageDraw.Draw(image)
-    font = ImageFont.truetype("arial.ttf", 16)
+    font = ImageFont.truetype("DejaVuSans.ttf", 16)
     padding = 5
     text_bbox = draw.textbbox((position[0], position[1]), text, font=font)
     top_left = (position[0], position[1] - (text_bbox[3] - text_bbox[1]) - padding)
