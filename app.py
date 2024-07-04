@@ -119,7 +119,7 @@ def predict(image):
         return original_image
 
 # Streamlit app
-st.title("Logo Counterfeit Detection")
+st.title("FINE 6900")
 
 uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
 
