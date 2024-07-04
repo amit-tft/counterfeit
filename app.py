@@ -119,7 +119,7 @@ def predict(image):
         return original_image
 
 # Streamlit app
-st.title("FINE 6900")
+st.title("FINE 6900 - IP Detection")
 
 uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
 
